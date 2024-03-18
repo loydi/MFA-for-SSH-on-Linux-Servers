@@ -26,6 +26,7 @@ Implementing email-based 2FA for SSH on Linux servers enhances security. Users u
 
     if you want to disable user just remove user group from user. or remove the user from mailsec_access.db file. 
     examples;
+    
     bar:bar@mxxxx.com:20240424   // the user is active and expiration date will end 20240424
     kemal:kemal.yildirim@aaa.com:never // the user is active and expiration date will not end
 
@@ -33,11 +34,13 @@ Implementing email-based 2FA for SSH on Linux servers enhances security. Users u
     echo -e  "kyi:kemal@xxx.com:never\nbar:foo@xxx.com:20240102" > /var/log/2fa/mailsec_access.db
 
 4 - Create logs and temp files
+
     echo "" > /var/log/2fa/templogin;
     echo "" > /var/log/2fa/tempseccode;
     echo "" > /var/log/2fa/mailsec.log;
 
 5 - The usergroup should read these files
+
     /usr/bin/mailsec2fa.py
     /var/log/2fa/templogin
     /var/log/2fa/tempseccode
