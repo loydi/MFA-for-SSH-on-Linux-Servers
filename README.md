@@ -1,10 +1,10 @@
-# Email-based 2FA for SSH on Linux-Servers
-Implementing email-based 2FA for SSH on Linux servers enhances security. Users undergo a two-step verification process via email, bolstering SSH access and safeguarding against unauthorized entry.
+# mfa for SSH on Linux-Servers
+Implementing email-based MFA for SSH on Linux servers enhances security. Users undergo a two-step verification process via email, bolstering SSH access and safeguarding against unauthorized entry.
 
 ## Features 
 
-*   You can set the 2fa function for a specific user group
-*   If a user login with 2fa one time on the same day then it won't ask security code again for the same day. 
+*   You can set the MFA function for a specific user group
+*   If a user login with MFA one time on the same day then it won't ask security code again for the same day. 
 *   The script will send the security code via SMTP
 
 ## Installation
